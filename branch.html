@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UTS WEB_YUSNA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" sizes="32x32" href="./asset/favicon-tab.png" />
+
+    <!-- ICONS  -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div id="home">
+        <div class="hd-con">
+          <div class="hd-wrap">
+            <a href="#home"><img src="./asset/logo.png" alt="logo" /></a>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="collection.html" target="_self">Collection</a></li>
+              <li><a href="branch.html" target="_self">Branch Stores</a></li>
+              <li><a href="contact.html" target="_self">Contact</a></li>
+            </ul>
+            <button class="btn">Appoitment</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="branch-con">
+        <div class="branch-wrap">
+          <h1 class="branch-text">NEW STORE BRANCHES COMING UP</h1>
+          <hr />
+          <div class="con-box">
+            <div class="boxx">
+              <div class="box-text">
+                <h3>KOTA JAKARTA</h3>
+                <p>Alamat : Jl. Sudirman No. 123, Jakarta Selatan</p>
+              </div>
+            </div>
+            <div class="boxx">
+              <div class="box-text">
+                <h3>KOTA SURABAYA</h3>
+                <p>Jl. Gubernur Suryo No. 45, Surabaya</p>
+              </div>
+            </div>
+            <div class="boxx">
+              <div class="box-text">
+                <h3>KOTA BANDUNG</h3>
+                <p>Jl. Dago No. 87, Bandung</p>
+              </div>
+            </div>
+            <div class="boxx">
+              <div class="box-text">
+                <h3>KOTA MEDAN</h3>
+                <p>Jl. Gatot Subroto No. 56, Medan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-con">
+        <div class="footer">
+          <h5>PRIVACY POLICY . FAQ</h5>
+          <p>ShineBrides &copy; 2023 Made by Yusna</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      var textWrapper = document.querySelector(".branch-text");
+      textWrapper.innerHTML = textWrapper.textContent.replace(
+        /\S/g,
+        "<span class='letter'>$&</span>"
+      );
+
+      anime
+        .timeline({ loop: true })
+        .add({
+          targets: ".branch-text .letter",
+          translateY: [-100, 0],
+          easing: "easeOutExpo",
+          duration: 1400,
+          delay: (el, i) => 30 * i,
+        })
+        .add({
+          targets: ".branch-text",
+          opacity: 0,
+          duration: 1000,
+          easing: "easeOutExpo",
+          delay: 1000,
+        });
+    </script>
+  </body>
+</html>

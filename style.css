@@ -1,0 +1,432 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* =========================== LOGIN  ===========================  */
+.login-container {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.login-container img {
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+.login-wrapper {
+  position: absolute;
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+h2 {
+  margin-bottom: 20px;
+}
+.input-container {
+  margin: 10px 0;
+}
+label {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+input[type="submit"] {
+  background-color: #002f58;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+/* =========================== INDEX  ===========================  */
+.hd-wrap {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  padding: 1em 10em;
+  z-index: 1500;
+  background-color: #ececec;
+}
+.hd-wrap img {
+  width: 10em;
+  height: 1.5em;
+  cursor: pointer;
+}
+.hd-wrap ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 5em;
+}
+.hd-wrap li a {
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+.hd-wrap li a:active {
+  color: #000000;
+}
+.hd-wrap li a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: darkgray;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.hd-wrap li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  border: 0;
+  outline: 0;
+  border-radius: 1em;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.btn:active {
+  background-color: darkgray;
+  transform: scale(0.9);
+}
+.hero img {
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+}
+.sec1-con {
+  padding: 4em 10em 1em 10em;
+  display: flex;
+  justify-content: center;
+}
+.sec1-wrap {
+  align-items: center;
+  text-align: center;
+}
+.sec1-wrap h4 {
+  text-align: center;
+  line-height: 2em;
+  margin-bottom: 1em;
+  cursor: default;
+}
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+  margin-bottom: 5em;
+}
+.sec1-h1 {
+  font-weight: bold;
+  font-size: 1.8rem;
+  letter-spacing: 0.5em;
+  cursor: default;
+}
+.sec1-h1 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+.text p {
+  margin-top: 1.5em;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+}
+.sec1-con .img-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 4em;
+  margin: 4em 0 5em 0;
+}
+.sec1-con .img-grid img {
+  width: 20em;
+  height: 30em;
+  margin-bottom: 1em;
+  transition: all 0.5s ease-in-out;
+  transition-property: transform;
+}
+.sec1-con .img-grid img:hover {
+  transform: scale(1.1);
+}
+.box .text1 p {
+  font-weight: bold;
+}
+.dif-sec h2 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
+}
+.uniq-wrap {
+  margin: 4em 0 5em 0;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+.uniq-wrap img {
+  width: 20em;
+  height: 30em;
+  margin-bottom: 1em;
+  transition: all 0.5s ease-in-out;
+  transition-property: transform;
+}
+.uniq-wrap img:hover {
+  transform: scale(1.1);
+}
+.sec2con {
+  display: flex;
+  justify-content: center;
+  cursor: default;
+}
+.sec2-wrap {
+  align-items: center;
+  text-align: center;
+}
+.sec2-wrap h2 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
+.sec2-wrap p {
+  font-weight: bold;
+  margin-bottom: 5em;
+}
+.footer-con {
+  /* position: fixed; */
+  width: 100%;
+  height: 10vh;
+  background-color: #ececec;
+  padding: 2em 5em;
+  bottom: 0;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+}
+.footer h5 {
+  font-family: "Roboto Condensed", sans-serif;
+  margin-right: 2em;
+}
+.footer p {
+  font-weight: bold;
+  font-size: small;
+}
+/* =========================== COLLECTION ===========================  */
+.coll-con {
+  padding: 10em 10em 4em 10em;
+  display: flex;
+  justify-content: center;
+  cursor: default;
+}
+.coll-wrap {
+  align-items: center;
+  text-align: center;
+}
+.coll-wrap h3 {
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+  margin-bottom: 4em;
+}
+.coll-text {
+  font-size: 1.8rem;
+  letter-spacing: 0.5em;
+  margin-bottom: 0.5em;
+  cursor: default;
+}
+.coll-text .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+.coll-wrap p {
+  font-weight: bold;
+}
+.box-coll {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  justify-content: center;
+  gap: 4em;
+  margin-bottom: 5em;
+}
+.box-coll .box-cell {
+  width: 20em;
+  height: 35em;
+}
+.box-coll .box-cell img {
+  width: 20em;
+}
+.con-text {
+  padding: 2em 0;
+  align-items: center;
+  text-align: center;
+  height: 12em;
+}
+.con-text h1 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+.con-text p {
+  margin-top: 1em;
+  font-weight: bold;
+  font-size: 0.8rem;
+  height: 5em;
+  margin-bottom: 1em;
+}
+.con-text span {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
+}
+.btn-uniq {
+  align-items: center;
+  padding: 1em 2em;
+  background: transparent;
+  border: 0.2em solid #ececec;
+  font-weight: bold;
+  margin-left: 7em;
+}
+.btn-uniq:active {
+  transform: scale(0.9);
+  border: 0.2em solid #000000;
+}
+/* =========================== BRANCH ===========================  */
+.branch-con {
+  padding: 10em 10em;
+  display: flex;
+  justify-content: center;
+  cursor: default;
+}
+.branch-wrap {
+  align-items: center;
+  text-align: center;
+}
+.branch-text {
+  font-size: 1.8rem;
+  letter-spacing: 0.5em;
+  margin-bottom: 0.8em;
+  cursor: default;
+  overflow: hidden;
+}
+.branch-text .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+.branch-wrap p {
+  font-weight: bold;
+}
+.con-box {
+  text-align: left;
+}
+.boxx {
+  display: flex;
+}
+.boxx:active {
+  border: 0.2em solid #000000;
+  transform: scale(1);
+}
+.con-box .boxx {
+  background-color: #ececec;
+  width: 55vw;
+  padding: 2em 3em;
+  margin-bottom: 4em;
+  border-radius: 2em;
+}
+.box-text h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 0.5em;
+  margin-bottom: 0.5em;
+}
+/* =========================== CONTACT ===========================  */
+.contact-con {
+  padding: 15em 10em 4em 10em;
+  display: flex;
+  justify-content: center;
+  cursor: default;
+  height: 100vh;
+}
+.contact-wrap {
+  align-items: center;
+  text-align: center;
+}
+.thanks {
+  color: black;
+  padding: 40px 0;
+  font-weight: 800;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  overflow: hidden;
+}
+.thanks .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+.contact-wrap p {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.contact-item-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 10em;
+  margin-top: 4em;
+}
+.contact-item {
+  background-color: #ececec;
+  padding: 2em 3em;
+  border-radius: 1em;
+}
+.contact-item:active {
+  background-color: gray;
+  transform: scale(0.9);
+}
+.contact-item a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.contact-item i {
+  margin-right: 1em;
+}

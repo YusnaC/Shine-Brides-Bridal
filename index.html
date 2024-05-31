@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UTS WEB_YUSNA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" sizes="32x32" href="./asset/favicon-tab.png" />
+
+    <!-- ICONS  -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div id="home">
+        <div class="hd-con">
+          <div class="hd-wrap">
+            <a href="#home"><img src="./asset/logo.png" alt="logo" /></a>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="collection.html" target="_self">Collection</a></li>
+              <li><a href="branch.html" target="_self">Branch Stores</a></li>
+              <li><a href="contact.html" target="_self">Contact</a></li>
+            </ul>
+            <button class="btn">Appoitment</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <hero>
+      <div id="home">
+        <div class="hero">
+          <img src="./asset/bg-hero.jpg" />
+        </div>
+      </div>
+    </hero>
+
+    <section>
+      <div class="sec1-con">
+        <div class="sec1-wrap">
+          <h4>
+            Shine Brides Boutique is the Radiance of Your True Wedding :
+            <br />Explore Your Timeless Bridal Gown at Our Boutique, Where Every
+            Stitch Tells Your Unique Love Story.
+          </h4>
+          <hr />
+          <div class="text">
+            <h1 class="sec1-h1">SNEAK PEEK OUR DESIGNS</h1>
+            <p>FINDING YOUR DREAM DRESS</p>
+          </div>
+          <div class="img-grid">
+            <div class="box">
+              <img src="./asset/pic6.jpeg" alt="pic" />
+              <div class="text1">
+                <p>Romantic Queen</p>
+              </div>
+            </div>
+            <div class="box">
+              <img src="./asset/pic2.jpg" alt="pic" />
+              <div class="text1">
+                <p>Eternal Elegance</p>
+              </div>
+            </div>
+            <div class="box">
+              <img src="./asset/pic3.jpeg" alt="pic" />
+              <div class="text1">
+                <p>Timeless Treasures</p>
+              </div>
+            </div>
+            <div class="box">
+              <img src="./asset/pic1.jpeg" alt="pic" />
+              <div class="text1">
+                <p>Love's Bond</p>
+              </div>
+            </div>
+            <div class="box">
+              <img src="./asset/pic4.jpeg" alt="pic" />
+              <div class="text1">
+                <p>Elegant Elysium</p>
+              </div>
+            </div>
+            <div class="box">
+              <img src="./asset/pic5.jpg" alt="pic" />
+              <div class="text1">
+                <p>Majestic Bliss</p>
+              </div>
+            </div>
+          </div>
+          <div class="dif-sec">
+            <h2>ACCESSORIES</h2>
+            <div class="uniq-wrap">
+              <img src="./asset/pic7.jpeg" alt="pic" />
+              <img src="./asset/pic8.jpeg" alt="pic" />
+            </div>
+          </div>
+          <hr />
+          <div id="location">
+            <div class="sec2con">
+              <div class="sec2-wrap">
+                <h2>OUR LOCATION</h2>
+                <p>
+                  Jl. Bypass Ngurah Rai, Jimbaran, Kec. Kuta Sel., Kabupaten
+                  Badung, Bali 80361
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-con">
+        <div class="footer">
+          <h5>PRIVACY POLICY . FAQ</h5>
+          <p>ShineBrides &copy; 2023 Made by Yusna</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      var textWrapper = document.querySelector(".sec1-h1");
+      textWrapper.innerHTML = textWrapper.textContent.replace(
+        /\S/g,
+        "<span class='letter'>$&</span>"
+      );
+
+      anime
+        .timeline({ loop: true })
+        .add({
+          targets: ".sec1-h1 .letter",
+          translateX: [40, 0],
+          translateZ: 0,
+          opacity: [0, 1],
+          easing: "easeOutExpo",
+          duration: 1200,
+          delay: (el, i) => 500 + 30 * i,
+        })
+        .add({
+          targets: ".sec1-h1 .letter",
+          translateX: [0, -30],
+          opacity: [1, 0],
+          easing: "easeInExpo",
+          duration: 1100,
+          delay: (el, i) => 100 + 30 * i,
+        });
+    </script>
+  </body>
+</html>
